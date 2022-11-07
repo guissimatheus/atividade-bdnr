@@ -21,11 +21,11 @@ app.use(function(err, req, res, next) {
     res.status(422).send({ error: err.message });
 })
 
+const routesView = require('./routes/api');
+app.use('/', routesView);
+
 const routesApi = require('./routes/api');
 app.use('/api', routesApi);
-
-// const routesView = require('./routes/api');
-// app.use('/', routesView);
 
 let port = 8080;
 app.listen(port, () => {

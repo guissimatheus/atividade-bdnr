@@ -6,7 +6,7 @@ exports.listar = function(req, res) {
     });
 }
 
-exports.registrar = function(req, res, next) {
+exports.cadastrar = function(req, res, next) {
     console.log("POST request:", req.body);
 
     let data = {
