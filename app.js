@@ -21,13 +21,16 @@ app.use(function(err, req, res, next) {
     res.status(422).send({ error: err.message });
 })
 
-const routesView = require('./routes/api');
-app.use('/', routesView);
+
+// Refatorar depois
+// const routesView = require('./routes/api');
+// app.use('/', routesView);
 
 const routesApi = require('./routes/api');
 app.use('/api', routesApi);
 
-let port = 8080;
+const port = 8080;
 app.listen(port, () => {
     console.log("Servidor executando na porta: " + port);
+    console.log("VIEW: http://localhost:8080/api");
 })

@@ -9,6 +9,9 @@ router.get('/', apiController.index);
 // VIEWS - Refatorar depois
 router.get('/view/funcionario/listar', apiController.funcionarioIndex);
 router.get('/view/funcionario/cadastrar', apiController.funcionarioCadastro);
+
+router.get('/view/unidade/listar', apiController.unidadeIndex);
+router.get('/view/unidade/cadastrar', apiController.unidadeCadastro);
 //
 
 router.get('/funcionario/listar', apiController.funcionario.listar);

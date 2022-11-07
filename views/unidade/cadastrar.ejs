@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Cadastrar Unidade</title>
+</head>
+<body>
+    <h1>Cadastrar Unidade</h1>
+    
+    <form action="/api/unidade/cadastrar" method="post">
+        <b>Produto</b>
+        <div class="mb-3">
+            <label for="produtoDescricao" class="form-label">Descrição:</label>
+            <input type="text" name="produtoDescricao" id="produtoDescricao" required placeholder="Digite a descrição" class="form-control" autofocus autocapitalize="on">
+        </div>
+
+        <div class="mb-3">
+            <label for="produtoPreco" class="form-label">Preço:</label>
+            <input type="number" name="produtoPreco" id="produtoPreco" required placeholder="Digite o preço" class="form-control" step=".01" min="0.00">
+        </div>
+
+        <div class="mb-3">
+            <label for="tamanho" class="form-label">Tamanho:</label>
+            <select name="tamanho" id="tamanho" required class="form-select">
+                <option value="PP" selected>PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="cor" class="form-label">Cor:</label>
+            <input type="text" name="cor" id="cor" required placeholder="Digite o cor" class="form-control" autocapitalize="on">
+        </div>
+
+        <b>Franquia</b>
+        <div class="mb-3">
+            <label for="franquiaCnpj" class="form-label">CNPJ:</label>
+            <input type="text" name="franquiaCnpj" id="franquiaCnpj" required placeholder="Digite o CNPJ" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="franquiaTelefone" class="form-label">Telefone:</label>
+            <input type="text" name="franquiaTelefone" id="franquiaTelefone" required placeholder="Digite o telefone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="franquiaEmail" class="form-label">E-mail:</label>
+            <input type="email" name="franquiaEmail" id="franquiaEmail" required placeholder="Digite o e-mail" class="form-control">
+        </div>
+
+        <button type="reset" class="btn btn-danger">Limpar Formulário</button>
+        <button type="submit" class="btn btn-primary ms-3">Enviar</button>
+    </form>
+</body>
+</html>

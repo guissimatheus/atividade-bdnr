@@ -16,3 +16,11 @@ exports.funcionarioIndex = function(red, res) {
 exports.funcionarioCadastro = function(red, res) {
     res.render("funcionario/cadastrar");
 }
+
+exports.unidadeIndex = function(red, res) {
+    res.render("unidade/index");
+}
+
+exports.unidadeCadastro = function(red, res) {
+    res.render("unidade/cadastrar");
+}
