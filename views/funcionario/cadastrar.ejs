@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Cadastrar Funcionário</title>
+</head>
+<body>
+    <h1>Cadastrar Funcionário</h1>
+    
+    <form action="/api/funcionario/cadastrar" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" name="nome" id="nome" required placeholder="Digite o nome" class="form-control" autofocus autocapitalize="words">
+        </div>
+
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required placeholder="Digite o CPF" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" required placeholder="Digite o telefone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="Digite o e-mail" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="perfil" class="form-label">Perfil:</label>
+            <select name="perfil" id="perfil" required class="form-select">
+                <option value="Funcionário" selected>Funcionário</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+        </div>
+        
+        <b>Franquia</b>
+        <div class="mb-3">
+            <label for="franquiaCnpj" class="form-label">CNPJ:</label>
+            <input type="text" name="franquiaCnpj" id="franquiaCnpj" required placeholder="Digite o CNPJ" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="franquiaTelefone" class="form-label">Telefone:</label>
+            <input type="text" name="franquiaTelefone" id="franquiaTelefone" required placeholder="Digite o telefone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="franquiaEmail" class="form-label">E-mail:</label>
+            <input type="email" name="franquiaEmail" id="franquiaEmail" required placeholder="Digite o e-mail" class="form-control">
+        </div>
+
+        <b>Responsável da Franquia</b>
+        <div class="mb-3">
+            <label for="responsavelNome" class="form-label">Nome:</label>
+            <input type="text" name="responsavelNome" id="responsavelNome" required placeholder="Digite o nome" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="responsavelTelefone" class="form-label">Telefone:</label>
+            <input type="text" name="responsavelTelefone" id="responsavelTelefone" required placeholder="Digite o telefone" class="form-control">
+        </div>
+
+        <button type="reset" class="btn btn-danger">Limpar Formulário</button>
+        <button type="submit" class="btn btn-primary ms-3">Enviar</button>
+    </form>
+</body>
+</html>

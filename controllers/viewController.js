@@ -1,7 +1,7 @@
-exports.index = function (req, res) {
-    res.render('index')
-}
+// exports.index = function (req, res) {
+//     res.render('index')
+// }
 
-exports.test = function (req, res) {
-    res.send("Hello World! Teste ao Controller...");
-}
+// exports.test = function (req, res) {
+//     res.send("Hello World! Teste ao Controller...");
+// }

@@ -11,3 +11,8 @@ Atividade proposta na aula (03/11/2022) da matéria Bancos de Dados Não Relacio
 Executar os seguintes comandos:
 1. `npm i`
 2. `npm start`
+
+## Links Úteis
+
+- [Documentação](https://www.mongodb.com/docs/) do MongoDB
+- [Documentação](https://getbootstrap.com/docs) do Bootstrap

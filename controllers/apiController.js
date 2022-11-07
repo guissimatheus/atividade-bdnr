@@ -12,3 +12,7 @@ exports.index = function(req, res) {
 exports.funcionarioIndex = function(red, res) {
     res.render("funcionario/index");
 }
+
+exports.funcionarioCadastro = function(red, res) {
+    res.render("funcionario/cadastrar");
+}

@@ -6,7 +6,10 @@ const apiController = require('../controllers/apiController.js');
 router.get('/teste', apiController.test);
 router.get('/', apiController.index);
 
+// VIEWS - Refatorar depois
 router.get('/view/funcionario/listar', apiController.funcionarioIndex);
+router.get('/view/funcionario/cadastrar', apiController.funcionarioCadastro);
+//
 
 router.get('/funcionario/listar', apiController.funcionario.listar);
 router.post('/funcionario/cadastrar', apiController.funcionario.cadastrar);
