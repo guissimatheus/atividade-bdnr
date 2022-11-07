@@ -30,4 +30,6 @@ exports.cadastrar = function(req, res, next) {
             console.log(unidade);
         })
         .catch(next);
+
+    // Lidar com redirect
 }

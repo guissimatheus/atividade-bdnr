@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,50 @@
 </head>
 <body>
     <h1>Unidades</h1>
-    <a href="/api/view/unidade/cadastrar" class="btn btn-primary">Cadastrar</a>
+    <a href="/api/view/unidade/cadastrar" class="btn btn-success">Cadastrar</a>
+    <!-- Criar função para apagar tudo -->
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="text-center">
+                <th colspan="2">Produto</th>
+                <th colspan="2"></th>
+                <th colspan="3">Franquia</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th class="border-start">Tamanho</th>
+                <th>Cor</th>
+                <th class="border-start">CNPJ</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th class="text-center border-start">Ações</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <% arrayUnidades.forEach(unidade => { %>
+                <tr class="align-middle">
+                    <td><%= unidade.produto.descricao %></td>
+                    <td><%= unidade.produto.preco %></td>
+                    <td><%= unidade.tamanho %></td>
+                    <td><%= unidade.cor %></td>
+                    <td><%= unidade.franquia.cnpj %></td>
+                    <td><%= unidade.franquia.telefone %></td>
+                    <td><%= unidade.franquia.email %></td>
+                    <td class="text-center">
+                        <a href="/api/view/unidade/editar/<%= unidade._id %>" class="btn btn-primary">Editar</a>
+                        <button onclick='apagar("<%= unidade._id %>")' class="btn btn-danger">Apagar</button>
+                    </td>
+                </tr>
+             <% }); %>
+        </tbody>
+    </table>
 </body>
+<script>
+    function apagar(id) {
+        console.log('Apagar:', id);
+    }
+</script>
 </html>

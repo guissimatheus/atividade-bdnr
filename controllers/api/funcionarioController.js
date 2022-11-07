@@ -1,8 +1,8 @@
 const funcionario = require('../../models/funcionarioModel');
 
 exports.listar = function(req, res) {
-    funcionario.find({}).then(funcionario => {
-        res.send(funcionario);
+    funcionario.find({}).then(arrayFuncionario => {
+        res.send(arrayFuncionario);
     });
 }
 
@@ -33,4 +33,6 @@ exports.cadastrar = function(req, res, next) {
             console.log(funcionario);
         })
         .catch(next);
+    
+    // Lidar com redirect
 }

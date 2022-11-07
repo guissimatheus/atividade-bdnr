@@ -12,6 +12,7 @@ router.get('/view/funcionario/cadastrar', apiController.funcionarioCadastro);
 
 router.get('/view/unidade/listar', apiController.unidadeIndex);
 router.get('/view/unidade/cadastrar', apiController.unidadeCadastro);
+router.get('/view/unidade/editar/:id', apiController.unidadeEditar);
 //
 
 router.get('/funcionario/listar', apiController.funcionario.listar);

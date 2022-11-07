@@ -14,6 +14,8 @@ Executar os seguintes comandos:
 
 ## Links Úteis
 
-- [Documentação](https://www.mongodb.com/docs/) do MongoDB
 - [Documentação](https://getbootstrap.com/docs) do Bootstrap
+- [Documentação](https://www.mongodb.com/docs/) do MongoDB
+- [Documentação](https://mongoosejs.com/docs/) do MongooseJS
 - [Documentação](https://expressjs.com/) do Express
+- [Documentação](https://ejs.co/#docs) do EJS
