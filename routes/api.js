@@ -20,5 +20,8 @@ router.post('/funcionario/cadastrar', apiController.funcionario.cadastrar);
 
 router.get('/unidade/listar', apiController.unidade.listar);
 router.post('/unidade/cadastrar', apiController.unidade.cadastrar);
+// router.put('/unidade/:id', apiController.unidade.atualizar);
+// Gambiarra do Ronaldo
+router.post('/unidade/atualizar/:id', apiController.unidade.atualizar);
 
 module.exports = router;

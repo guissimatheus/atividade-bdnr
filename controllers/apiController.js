@@ -35,9 +35,14 @@ exports.unidadeCadastro = function(req, res) {
     res.render("unidade/cadastrar");
 }
 
-exports.unidadeEditar = function(req, res) {
-    // console.log(req.params)
-    res.send(req.params);
-    
-    // Pegar documento e jogar no formulário
+exports.unidadeEditar = async function(req, res) {
+    let unidadeEncontrada;
+
+    // Refatorar -> utilizar API
+    await unidade.findById(req.params.id)
+        .then(data => {
+            // console.log(data)
+            unidadeEncontrada = data;
+    });
+    res.render("unidade/editar", { unidade: unidadeEncontrada });
 }

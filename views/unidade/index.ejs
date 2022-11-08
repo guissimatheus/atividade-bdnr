@@ -15,13 +15,15 @@
     <table class="table table-striped">
         <thead>
             <tr class="text-center">
+                <th></th>
                 <th colspan="2">Produto</th>
-                <th colspan="2"></th>
+                <th colspan="2">Unidade</th>
                 <th colspan="3">Franquia</th>
                 <th></th>
             </tr>
             <tr>
-                <th>Descrição</th>
+                <th>ID</th>
+                <th class="border-start">Descrição</th>
                 <th>Preço</th>
                 <th class="border-start">Tamanho</th>
                 <th>Cor</th>
@@ -34,6 +36,7 @@
         <tbody class="table-group-divider">
             <% arrayUnidades.forEach(unidade => { %>
                 <tr class="align-middle">
+                    <td><%= unidade.id %></td>
                     <td><%= unidade.produto.descricao %></td>
                     <td><%= unidade.produto.preco %></td>
                     <td><%= unidade.tamanho %></td>

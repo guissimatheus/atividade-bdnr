@@ -19,3 +19,11 @@ Executar os seguintes comandos:
 - [Documentação](https://mongoosejs.com/docs/) do MongooseJS
 - [Documentação](https://expressjs.com/) do Express
 - [Documentação](https://ejs.co/#docs) do EJS
+
+## To Do
+
+- [ ] Refatorar código de apiController para usar métodos já existentes 
+- [ ] Refatorar _views_
+- [ ] Refatorar rotas
+- [ ] Arrumar redirecionamento de _requests_
+- [ ] Arrumar _PUT request_
